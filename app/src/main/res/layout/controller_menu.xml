@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/menu_screen">
+
+    <TextView
+        android:id="@+id/game_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias=".20"
+        android:textSize="48sp"
+        android:fontFamily="@font/black_pearl"
+        android:text="Pirate Game"
+        />
+
+    <Button
+        android:id="@+id/new_game_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/game_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/continue_game_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:fontFamily="@font/black_pearl"
+        android:textSize="24sp"
+        android:text="New Game"
+        />
+
+    <Button
+        android:id="@+id/continue_game_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/new_game_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/artwork_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:fontFamily="@font/black_pearl"
+        android:textSize="24sp"
+        android:text="Continue Game"
+        />
+
+    <Button
+        android:id="@+id/artwork_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/continue_game_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/achievements_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:fontFamily="@font/black_pearl"
+        android:textSize="24sp"
+        android:text="Artwork"
+        />
+
+    <Button
+        android:id="@+id/achievements_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/artwork_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/settings_btn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:fontFamily="@font/black_pearl"
+        android:textSize="24sp"
+        android:text="Achievements"
+        />
+
+    <Button
+        android:id="@+id/settings_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/continue_game_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:fontFamily="@font/black_pearl"
+        android:textSize="24sp"
+        android:text="Settings"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

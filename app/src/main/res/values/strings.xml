@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Pirate Game</string>
+    <string name="fame">Fame</string>
+    <string name="wealth">Wealth</string>
+    <string name="experience">Experience</string>
+    <string name="health">Health</string>
+</resources>
